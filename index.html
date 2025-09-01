@@ -1,91 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Digital Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Digital Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Navigation -->
   <header>
-    <nav class="nav">
-      <h1 class="logo">SANTHOSH N</h1>
+    <nav>
+      <h1 class="logo">MyPortfolio</h1>
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="home" class="section hero">
-      <div class="hero-inner">
-        <h2>Hi, I'm <span class="accent">SANTHOSH N</span></h2>
-        <p class="tagline"> • Front End Web Developer • JavaScript</p>
-        <div class="hero-cta">
-          <button onclick="scrollToSection('projects')">See Projects</button>
-          <a class="cta-link" href="#contact">Contact Me</a>
-        </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span>Santhosh N</span></h2>
+      <p>A passionate Web Developer & Designer</p>
+      <button onclick="scrollToSection('projects')">View My Work</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a dedicated developer with expertise in front-end and back-end
+      technologies. I enjoy creating clean, responsive, and user-friendly websites.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React</div>
+      <div class="skill">Python</div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio built with HTML, CSS, and JavaScript.</p>
       </div>
-    </section>
-
-    <section id="about" class="section about">
-      <h2>About Me</h2>
-      <p>I'm a web developer who builds responsive, accessible, and performant websites. I enjoy turning ideas into clean, user-friendly interfaces.</p>
-    </section>
-
-    <section>
-      <div id="skiils" class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">React (optional)</div>
-        <div class="skill">Node.js (optional)</div>
+      <div class="card">
+        <h3>To-Do App</h3>
+        <p>Task management app with local storage support.</p>
       </div>
-    </section>
-
-    <section id="projects" class="section projects">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <article class="project-card">
-          <h3>Portfolio Website</h3>
-          <p>A responsive portfolio built with HTML, CSS and vanilla JS.</p>
-          <a class="project-btn" href="#" onclick="alert('Open project: Portfolio Website')">View</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Todo App</h3>
-          <p>A small todo application with add/edit/delete and local storage.</p>
-          <a class="project-btn" href="#" onclick="alert('Open project: Todo App')">View</a>
-        </article>
-
-        <article class="project-card">
-          <h3>Weather App</h3>
-          <p>Fetches weather data from an API and displays forecast (demo).</p>
-          <a class="project-btn" href="#" onclick="alert('Open project: Weather App')">View</a>
-        </article>
+      <div class="card">
+        <h3>E-commerce Demo</h3>
+        <p>Basic e-commerce front-end with cart functionality.</p>
       </div>
-    </section>
+    </div>
+  </section>
 
-     <section id="contact" class="section contact">
-      <center>
-      <h2>Contact Me</h2>
-      </center>
-      <form id="contactForm" onsubmit="submitContact(event)">
-        <input type="text" id="name" placeholder="Your name" required>
-        <input type="email" id="email" placeholder="Your email" required>
-        <textarea id="message" placeholder="Message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-      <p id="formStatus" aria-live="polite"></p>
-    </section>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 My Portfolio | All Rights Reserved </p>
+    <p>© 2025 Your Name | All Rights Reserved</p>
   </footer>
 
   <script src="script.js"></script>
